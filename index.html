@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>โปรไฟล์อิเล็กทรอนิกส์ - พิมพ์ชนก เข็มนางรอง</title>
-    <!-- นำเข้า Tailwind CSS สำหรับการตกแต่ง -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- นำเข้า FontAwesome สำหรับไอคอน -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- นำเข้าฟอนต์ Prompt จาก Google Fonts -->
+    <!-- Google Font: Prompt -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,86 +18,104 @@
 </head>
 <body class="bg-gradient-to-br from-slate-900 via-pink-950 to-slate-900 min-h-screen flex items-center justify-center p-4 text-slate-100">
 
-    <!-- การ์ดโปรไฟล์ -->
-    <div class="w-full max-w-md bg-slate-800/80 backdrop-blur-xl border border-slate-700 rounded-3xl shadow-2xl overflow-hidden p-6 text-center relative">
+    <!-- Card Container -->
+    <div class="w-full max-w-md bg-slate-800/80 backdrop-blur-xl border border-slate-700/80 rounded-3xl shadow-2xl overflow-hidden p-6 text-center relative">
         
-        <!-- แบนเนอร์ตกแต่งส่วนหัว -->
-        <div class="absolute top-0 left-0 right-0 h-28 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-80"></div>
+        <!-- Top Header Banner -->
+        <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-80"></div>
 
-        <!-- รูปโปรไฟล์ -->
-        <div class="relative mt-10 mb-4">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" 
+        <!-- Profile Image -->
+        <div class="relative mt-12 mb-4">
+            <img src="IMG_8187_aae7dc.jpg" 
                  alt="พิมพ์ชนก เข็มนางรอง" 
-                 class="w-28 h-28 mx-auto rounded-full object-cover border-4 border-slate-800 shadow-lg">
+                 class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-slate-800 shadow-2xl">
         </div>
 
-        <!-- ชื่อและรายละเอียดส่วนตัว -->
+        <!-- Personal Details -->
         <h1 class="text-2xl font-bold text-white mb-1">พิมพ์ชนก เข็มนางรอง</h1>
-        <p class="text-pink-400 font-medium text-sm mb-2">นักศึกษา • อายุ 19 ปี</p>
+        <p class="text-pink-400 font-medium text-sm mb-3">อายุ 19 ปี</p>
         
-        <!-- สถานศึกษา -->
-        <div class="inline-flex items-center space-x-2 bg-slate-700/50 px-3 py-1.5 rounded-full text-slate-300 text-xs mb-6 border border-slate-600">
+        <!-- Education Info Badge -->
+        <div class="inline-flex items-center space-x-2 bg-slate-700/60 px-4 py-1.5 rounded-full text-slate-200 text-xs mb-6 border border-slate-600 shadow-sm">
             <i class="fa-solid fa-graduation-cap text-pink-400"></i>
             <span>วิทยาลัยเทคนิคนางรอง</span>
         </div>
 
-        <!-- รายการลิงก์ติดต่อ (Buttons) -->
+        <!-- Bio / Short Introduction -->
+        <p class="text-slate-300 text-xs px-2 mb-6 leading-relaxed">
+            ยินดีต้อนรับสู่โปรไฟล์ดิจิทัลของฉัน สามารถติดตามข่าวสาร โครงงาน หรือติดต่อสอบถามข้อมูลเพิ่มเติมได้ตามช่องทางด้านล่างนี้ค่ะ
+        </p>
+
+        <!-- Social & Contact Links -->
         <div class="space-y-3">
             
-            <!-- เบอร์โทรศัพท์ -->
-            <a href="tel:0812345678" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-700/60 hover:bg-pink-600 border border-slate-600 hover:border-pink-500 transition-all duration-300 group shadow-md">
+            <!-- Telephone Call -->
+            <a href="tel:0812345678" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-700/50 hover:bg-pink-600 border border-slate-600/60 hover:border-pink-500 transition-all duration-300 group shadow-md">
                 <div class="flex items-center space-x-3">
-                    <div class="w-9 h-9 rounded-lg bg-pink-500/20 flex items-center justify-center text-pink-400 group-hover:bg-white group-hover:text-pink-600 transition-colors">
-                        <i class="fa-solid fa-phone"></i>
+                    <div class="w-10 h-10 rounded-xl bg-pink-500/20 flex items-center justify-center text-pink-400 group-hover:bg-white group-hover:text-pink-600 transition-colors">
+                        <i class="fa-solid fa-phone text-base"></i>
                     </div>
-                    <span class="font-medium text-sm">โทรติดต่อ (Call)</span>
+                    <div class="text-left">
+                        <p class="font-medium text-sm text-white">เบอร์โทรศัพท์</p>
+                        <p class="text-[11px] text-slate-400 group-hover:text-pink-100">โทรติดต่อด่วน</p>
+                    </div>
                 </div>
-                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white"></i>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white transition-transform group-hover:translate-x-1"></i>
             </a>
 
-            <!-- LINE -->
-            <a href="https://line.me" target="_blank" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-700/60 hover:bg-emerald-600 border border-slate-600 hover:border-emerald-500 transition-all duration-300 group shadow-md">
+            <!-- LINE Contact -->
+            <a href="https://line.me" target="_blank" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-700/50 hover:bg-emerald-600 border border-slate-600/60 hover:border-emerald-500 transition-all duration-300 group shadow-md">
                 <div class="flex items-center space-x-3">
-                    <div class="w-9 h-9 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:bg-white group-hover:text-emerald-600 transition-colors">
-                        <i class="fa-brands fa-line"></i>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:bg-white group-hover:text-emerald-600 transition-colors">
+                        <i class="fa-brands fa-line text-lg"></i>
                     </div>
-                    <span class="font-medium text-sm">เพิ่มเพื่อนทาง LINE</span>
+                    <div class="text-left">
+                        <p class="font-medium text-sm text-white">LINE</p>
+                        <p class="text-[11px] text-slate-400 group-hover:text-emerald-100">เพิ่มเพื่อนพูดคุย</p>
+                    </div>
                 </div>
-                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white"></i>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white transition-transform group-hover:translate-x-1"></i>
             </a>
 
             <!-- Facebook -->
-            <a href="https://facebook.com" target="_blank" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-700/60 hover:bg-blue-600 border border-slate-600 hover:border-blue-500 transition-all duration-300 group shadow-md">
+            <a href="https://facebook.com" target="_blank" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-700/50 hover:bg-blue-600 border border-slate-600/60 hover:border-blue-500 transition-all duration-300 group shadow-md">
                 <div class="flex items-center space-x-3">
-                    <div class="w-9 h-9 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:bg-white group-hover:text-blue-600 transition-colors">
-                        <i class="fa-brands fa-facebook"></i>
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400 group-hover:bg-white group-hover:text-blue-600 transition-colors">
+                        <i class="fa-brands fa-facebook text-lg"></i>
                     </div>
-                    <span class="font-medium text-sm">Facebook</span>
+                    <div class="text-left">
+                        <p class="font-medium text-sm text-white">Facebook</p>
+                        <p class="text-[11px] text-slate-400 group-hover:text-blue-100">พิมพ์ชนก เข็มนางรอง</p>
+                    </div>
                 </div>
-                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white"></i>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white transition-transform group-hover:translate-x-1"></i>
             </a>
 
             <!-- Instagram -->
-            <a href="https://instagram.com" target="_blank" class="flex items-center justify-between p-3.5 rounded-xl bg-slate-700/60 hover:bg-purple-600 border border-slate-600 hover:border-purple-500 transition-all duration-300 group shadow-md">
+            <a href="https://instagram.com" target="_blank" class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-700/50 hover:bg-purple-600 border border-slate-600/60 hover:border-purple-500 transition-all duration-300 group shadow-md">
                 <div class="flex items-center space-x-3">
-                    <div class="w-9 h-9 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-white group-hover:text-purple-600 transition-colors">
-                        <i class="fa-brands fa-instagram"></i>
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-white group-hover:text-purple-600 transition-colors">
+                        <i class="fa-brands fa-instagram text-lg"></i>
                     </div>
-                    <span class="font-medium text-sm">Instagram</span>
+                    <div class="text-left">
+                        <p class="font-medium text-sm text-white">Instagram</p>
+                        <p class="text-[11px] text-slate-400 group-hover:text-purple-100">ติดตามไลฟ์สไตล์</p>
+                    </div>
                 </div>
-                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white"></i>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400 group-hover:text-white transition-transform group-hover:translate-x-1"></i>
             </a>
 
         </div>
 
-        <!-- ปุ่มแชร์โปรไฟล์ -->
-        <div class="mt-6 pt-4 border-t border-slate-700 flex justify-center">
-            <button onclick="navigator.clipboard.writeText(window.location.href); alert('คัดลอกลิงก์โปรไฟล์เรียบร้อยแล้ว!');" class="text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 px-4 py-2 rounded-full transition-colors flex items-center space-x-1">
-                <i class="fa-solid fa-share-nodes mr-1"></i> แชร์โปรไฟล์
+        <!-- Share Profile Button -->
+        <div class="mt-6 pt-4 border-t border-slate-700/80 flex justify-center">
+            <button onclick="navigator.clipboard.writeText(window.location.href); alert('คัดลอกลิงก์โปรไฟล์เรียบร้อยแล้ว!');" class="text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 px-5 py-2.5 rounded-full transition-colors flex items-center space-x-2 shadow-sm">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span>แชร์โปรไฟล์นี้</span>
             </button>
         </div>
 
-        <!-- ส่วนท้าย (Footer) -->
+        <!-- Footer -->
         <div class="mt-4 text-[10px] text-slate-500">
             Digital Profile © 2026 • พิมพ์ชนก เข็มนางรอง
         </div>
